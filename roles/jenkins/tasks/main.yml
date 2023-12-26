@@ -1,4 +1,4 @@
 - name: create jobs
-  ansible.builtin.include_tasks: "pipeline.yml"
+  ansible.builtin.include_task: "pipeline.yml"
   loops:
     - {name: "frontend", dir: "CIPipeline" }
