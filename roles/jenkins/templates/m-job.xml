@@ -19,7 +19,7 @@
     <triggers>
         <com.igalg.jenkins.plugins.mswt.trigger.ComputedFolderWebHookTrigger plugin="multibranch-scan-webhook-trigger">
             <spec></spec>
-            <token>cart</token>
+            <token>{{item.name}}</token>
         </com.igalg.jenkins.plugins.mswt.trigger.ComputedFolderWebHookTrigger>
     </triggers>
     <disabled>false</disabled>
@@ -28,7 +28,7 @@
             <jenkins.branch.BranchSource>
                 <source class="jenkins.plugins.git.GitSCMSource" plugin="git">
                     <id>{{unique_key}}</id>
-                    <remote>https://github.com/Pappik/cart</remote>
+                    <remote>https://github.com/Pappik/{{item.name}}</remote>
                     <credentialsId></credentialsId>
                     <traits>
                         <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
