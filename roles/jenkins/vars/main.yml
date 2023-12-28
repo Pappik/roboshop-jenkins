@@ -1,10 +1,15 @@
 folders:
   - CIPipeline
+  - Infra
 
-pipeline_jobs:
+ci_pipeline_jobs:
   - {name: "frontend", dir: "CIPipeline"}
   - {name: "catalogue", dir: "CIPipeline"}
   - {name: "user", dir: "CIPipeline"}
   - {name: "cart", dir: "CIPipeline"}
   - {name: "shipping", dir: "CIPipeline"}
   - {name: "payment", dir: "CIPipeline"}
+
+
+sbranch_pipeline_jobs:
+  - {name: "roboshop-Infra", dir: "Infra"}
