@@ -12,4 +12,4 @@ ci_pipeline_jobs:
 
 
 sbranch_pipeline_jobs:
-  - {name: "roboshop-Infra", dir: "Infra"}
+  - {name: "roboshop-infra", dir: "Infra"}
